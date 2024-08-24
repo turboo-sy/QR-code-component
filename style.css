@@ -1,0 +1,60 @@
+    /* styles.css */
+    :root {
+    --White: hsl(0, 0%, 100%);
+    --Slate-300: hsl(212, 45%, 89%);
+    --Slate-500: hsl(216, 15%, 48%);
+    --Slate-900: hsl(218, 44%, 22%);
+    font-size: 15px;
+    }
+    body {
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--Slate-300); /* Light blue background */
+    margin: 0;
+    }
+
+    .card {
+    background-color: var(--White);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 265px; /* Width of the card */
+    padding: 20px;
+    }
+
+    .qr-code img {
+    width: 100%; /* Ensures the QR code takes up full width of the container */
+    border-radius: 10px; /* Slight rounding for aesthetic */
+    }
+
+    .card-content h1 {
+    font-size: 1.45rem; /* Font size for the heading */
+    color: var(--Slate-900); /* Darker text color */
+    margin-top: 20px;
+    margin-bottom: 15px;
+    }
+
+    .card-content p {
+    font-size: 1rem; /* Slightly smaller text for the paragraph */
+    color: var(--Slate-500); /* Gray text color */
+    line-height: 1.5;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 480px) {
+    .card {
+    padding: 15px; 
+    }
+
+    .card-content h1 {
+    font-size: 1.1rem; 
+    }
+
+    .card-content p {
+    font-size: 0.85rem; 
+    }
+    }
